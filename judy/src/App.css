@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+
+.App {
+  background-color: #fffbee;
+  padding: 10px;
+  /* margin-left: 20px; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  font-family: 'Spectral', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: 135px;
+  color: #FF4E00;
+  background-color: #fffbee;
+  padding: 20px;
+}
+
+.App-contact {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: right;
+  justify-content: right;
+  font-size: 27px;
+  color: #FF4E00;
+  background-color: #fffbee;
+  padding: 20px;
+}
+.App-header1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: 27px;
+  color: #FF4E00;
+  background-color: #fffbee;
+  padding: 20px;
+}
+
+/* https://codepen.io/ChrisofArabia/pen/rrPOkJ */
+.App-h1b {
+  color: #023047;
+  padding: 20px;
+}
+
+.App-h1r {
+  color: #FF4E00;
+  margin: 20px;
+}
+
+.App-body {
+  font-family: 'Spectral', serif;
+  font-size: 35px;
+  color: #FF4E00;
+  background-color: #fffbee;
+  padding: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_pill_button */
+button {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #023047;
+  color: #fffbee;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;  
+  cursor: pointer;
+  border-radius: 20px;
+  width: 180px;
+  height: 45px;
+}
+button:hover {
+  background-color: #FF4E00;
+}
