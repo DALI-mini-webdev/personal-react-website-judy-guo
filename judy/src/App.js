@@ -7,6 +7,7 @@ import hiking from './pics/hiking.jpeg';
 import painting from './pics/painting.jpeg';
 import strawbcake from './pics/strawb cake.jpeg';
 import walk from './pics/walk.jpeg';
+import Navbar from './components/Navbar/Navbar';
 
 
 
@@ -35,6 +36,7 @@ function App() {
   return (
     <div>
     <div className="App">
+      <Navbar />
       <header className= "App-contact">
         <p>Dartmouth College</p>
         <p>judy.guo.24@dartmouth.edu</p>
