@@ -41,6 +41,14 @@ class App extends Component {
     window.open("https://vsco.co/juds-foods/gallery")
     console.log("the 'explore my vsco' button was clicked");
   }
+  
+  message = function() {  
+    console.log("This message is shown after 3 seconds");
+    setTimeout(message, 3000);
+
+}
+ 
+
   activityList = ["hiking", "canoeing", "procrasti-baking"];
  
   // activityMap = activityList.map((activity) => {
@@ -69,6 +77,8 @@ class App extends Component {
             Judy Guo +
             <br></br>
             {/* <input type="text" onChange={onChangeFunction}/> */}
+            
+ 
           </p>
         </header>
       </div>
@@ -84,18 +94,18 @@ class App extends Component {
           <img src={hiking} width="252" height="336"/>
           <img src={canoeing} width="252" height="336"/>
           <br></br>
-          {/* <button onClick={buttonFunctionGit}>+ Explore my GitHub</button> */}
+          <button onClick={this.buttonFunctionGit}>+ Explore my GitHub</button>
   
     
         </header>
         <header className="App-body">  
           <br></br>
-          {/* <div>{activityMap}</div> */}
+          {/* <div>{this.activityMap}</div> */}
           <img src={strawbcake} width="142" height="189"/> 
           <img src={brioche} width="152" height="189"/> 
           <img src={cinbns} width="200" height="189"/>
           <br></br>
-          {/* <button onClick={buttonFunctionVSCO}>+ Explore my VSCO</button> */}
+          <button onClick={this.buttonFunctionVSCO}>+ Explore my VSCO</button>
           {/* <Recipes /> */} 
        </header>
       
@@ -112,7 +122,8 @@ class App extends Component {
 }
 export default App;
 
-/** 
+/** TO-DO JUDY
  * how to get return from activity map
  * recipes board
+ * projects/stuff pages
  */
