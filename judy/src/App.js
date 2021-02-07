@@ -10,7 +10,7 @@ import painting from './pics/painting.jpeg';
 import strawbcake from './pics/strawb cake.jpeg';
 import walk from './pics/walk.jpeg';
 import Recipes from './components/Recipes'
-import Projects from './components/Projects'
+import RecipesPage from './components/RecipesPage'
 import Stuff from './components/Stuff'
 import React, { Component } from 'react';
 
@@ -41,14 +41,8 @@ class App extends Component {
     window.open("https://vsco.co/juds-foods/gallery")
     console.log("the 'explore my vsco' button was clicked");
   }
-  
-  message = function() {  
-    console.log("This message is shown after 3 seconds");
-    setTimeout(message, 3000);
-
-}
  
-
+  
   activityList = ["hiking", "canoeing", "procrasti-baking"];
  
   // activityMap = activityList.map((activity) => {
@@ -58,14 +52,21 @@ class App extends Component {
 
  
   render() {
+    const welcome = function() {  
+      alert("WELCOME!! Please disregard any broken functionalities (e.g. you have to click OK twice to close this pop-up and my Recipe Ideas and Stuff pages don't render yet)! They will be fixed soon, hopefully by your next visit :) ");
+    }
+   
+    setTimeout(welcome, 800);
+
+    
     return (
       <div>
       <div className="App">
         <Navbar />
-        <button onClick = {() => {this.changePage(0)}}>Projects</button>
+        <button onClick = {() => {this.changePage(0)}}>Recipe Ideas</button>
         <button onClick = {() => {this.changePage(1)}}>Stuff</button>
         {
-          this.state.renderPage = 0 ? <Projects/> : <Stuff/>
+          this.state.renderPage = 0 ? <RecipesPage/> : <Stuff/>
         }
   
       </div>
@@ -94,6 +95,7 @@ class App extends Component {
           <img src={hiking} width="252" height="336"/>
           <img src={canoeing} width="252" height="336"/>
           <br></br>
+       
           <button onClick={this.buttonFunctionGit}>+ Explore my GitHub</button>
   
     
@@ -106,7 +108,7 @@ class App extends Component {
           <img src={cinbns} width="200" height="189"/>
           <br></br>
           <button onClick={this.buttonFunctionVSCO}>+ Explore my VSCO</button>
-          {/* <Recipes /> */} 
+          {/* <Recipes />  */}
        </header>
       
       </div>
@@ -123,7 +125,8 @@ class App extends Component {
 export default App;
 
 /** TO-DO JUDY
+ * hamburger icon import
  * how to get return from activity map
  * recipes board
- * projects/stuff pages
+ * recipe ideas/stuff pages
  */
