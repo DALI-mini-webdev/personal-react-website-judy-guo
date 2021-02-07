@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
 
-
 .App {
   background-color: #fffbee;
   padding: 10px;
@@ -85,6 +84,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_pill_button */
 button {

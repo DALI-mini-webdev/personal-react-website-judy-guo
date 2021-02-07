@@ -5,23 +5,14 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Services',
-        url: '#',
+        title: 'Projects',
+        url: 'https://github.com/judy-guo',
         cName: 'nav-links'
     },
     {
-        title: 'Products',
-        url: '#',
+        title: 'Contact Me',
+        url: 'https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqcvkDVSntlWtRWchHBWKPbxjHDPwRNCZpslDfQBLmNVvSkVsblPlRjkRldHMvcmGwRxK',
         cName: 'nav-links'
     },
-    {
-        title: 'Contact Us',
-        url: '#',
-        cName: 'nav-links'
-    },
-    {
-        title: 'Sign up',
-        url: '#',
-        cName: 'nav-links-mobile'
-    },
+    
 ]
