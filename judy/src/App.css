@@ -72,6 +72,18 @@
   padding: 20px;
 }
 
+.App-main-body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: 18px;
+  color: #023047;
+  background-color: #fffbee;
+  padding: 20px;
+}
+
 .App-link {
   color: #61dafb;
 }

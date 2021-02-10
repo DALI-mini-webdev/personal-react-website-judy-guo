@@ -55,7 +55,7 @@ class Recipes extends Component {
         );
         return (
             <div>
-                <p> this is the recipe brainstorm  board </p>
+                <p>Here is a recipe brainstorm  board! </p>
                 {allRecipes}
                 <p>Add a recipe!</p>
                 <p>Enter Name: </p>
