@@ -5,6 +5,9 @@ import Intro from './components/Intro'
 import Work from './components/Work'
 import Play from './components/Play'
 import axios from 'axios'; 
+import firebase from './firestore/index';
+import ToDoBoard from './components/ToDoBoard';
+
 
 
 class App extends Component {
@@ -72,6 +75,8 @@ class App extends Component {
 
  
   render() {
+    console.log(firebase);
+    console.log(firebase.db);
     // const welcome = function() {  
     //   alert("WELCOME!! Please disregard any broken functionalities (e.g. you have to click OK twice to close this pop-up and my Recipe Ideas and Stuff pages don't render yet)! They will be fixed soon, hopefully by your next visit :) ");
     // }
@@ -84,9 +89,10 @@ class App extends Component {
       <div className="App">
         <Navbar changeCurrPage = {this.changeCurrPage}/>
         {this.renderPage()}  
+        <ToDoBoard />
         <button onClick={this.fetchData}>click for brain food!</button>
             {this.renderData()}
-  
+
        
       </div>
 
